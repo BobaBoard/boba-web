@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
   "dependencies": {
-    "astro": "^2.6.3"
+    "@fontsource/poppins": "^5.0.3",
+    "@fontsource/roboto": "^5.0.3"
   }
 }
