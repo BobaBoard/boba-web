@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+// import Card from '../components/Card.astro';
+---
+
+<Layout title="BobaBoard">
+	<main>
+
+		<section class="hero two-columns">
+
+			<img src="/public/images/realms.webp" alt="">
+
+			<div class="wrapper">
+				<h1>Be the Monarch of Your Own Realm!</h1>
+				<p>From your own secret hideout to fandom-wide kinkmemes, BobaBoard lets you create moderated, privacy-oriented communities for all your fandom interests (and beyond).</p>
+			</div>
+
+		</section>
+
+		<section class="two-columns">
+			
+			<div class="wrapper">
+				<h2>Find the place(s) you belong</h2>
+				<p>Tired of the large, unmoderated cacophony of modern social networks? Too old and busy to keep up with the fast-paced environment of Discord servers (or to hunt for the right ones)?</p>
+				<p>With its flexible moderation & privacy tools, multimedial threaded discussions, and a high degree of customization, BobaBoard helps you build communities aligned with your interests and values.</p>
+				<a href="">Learn more about how Realms make it easy for anyone to find—and create!—their own corner of the web!</a>
+			</div>
+
+			<img src="/public/images/passion.webp" alt="">
+
+		</section>
+
+		<section class="two-columns">
+
+			<img src="/public/images/fellow-kids.webp" alt="">
+
+			<div class="wrapper">
+				<h2>By Online Fans, For Online Fans</h2>
+				<p>In an Internet shaped by overly-large corporations and profit-seeking Venture Capitalists, BobaBoard is designed for and made by those who live out their passions on the web.</p>
+				<p>Whether you're filled with rose-colored nostalgia for older online communities, or are seething at the missed opportunities to improve our spaces, believe us: we feel you, we hear you, and—most importantly—we build with you.</p>
+				<a href="">Discover BobaBoard's existing, planned, and ~aspirational~ features (and leave feedback!) on our Features page.</a>
+			</div>
+		</section>
+
+		<section class="two-columns">
+
+			<div class="wrapper">
+				<h1>Experimental, chaotic-ethical, anonymity-first approach</h1>
+				<p>Here at BobaBoard we're not afraid of building outside the box: from organizing questionably-awesome online events, to centering our product strategy around mostly-anonymous communities, we believe in the revolutionary power of letting your creative juices run wild.</p>
+				<p>Still, with great chaos comes great responsibility. When (and where) it matters, we know how to "git gud".</p>
+				<p><a href="">Read about our vision, philosophy and commitment to transparency in the second edition of our FUCQs.</a></p>
+			</div>
+
+			<img src="/public/images/not-a-jojo-reference.webp" alt="">
+
+		</section>
+
+	</main>
+
+	
+</Layout>
+
+<style>
+
+	.hero {
+		text-align: center;
+	}
+
+	section {
+		padding: 1.5em;
+	}
+
+	.two-columns {
+		display: flex;
+		/* align-items: center; */
+		gap: 2em;
+	}
+
+
+@media all and (min-width: 700px) {
+
+	section img,
+	.wrapper {
+		width: calc(50% - 2em);	
+	}
+
+}
+
+</style>
