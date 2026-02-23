@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import realms from '../images/realms.webp';
+import passion from '../images/passion.webp';
+import fellowKids from '../images/fellow-kids.webp';
+import notAJojoReference from '../images/not-a-jojo-reference.webp';
 ---
 
 <Layout title="BobaBoard">
@@ -8,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
 
 		<section class="hero two-columns">
 
-			<img src="/public/images/realms.webp" alt="">
+			<Image src={realms} alt="" />
 
 			<div class="wrapper">
 				<h1>Be the Monarch of Your Own Realm!</h1>
@@ -18,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<section class="two-columns">
-			
+
 			<div class="wrapper">
 				<h2>Find the place(s) you belong</h2>
 				<p>Tired of the large, unmoderated cacophony of modern social networks? Too old and busy to keep up with the fast-paced environment of Discord servers (or to hunt for the right ones)?</p>
@@ -26,13 +30,13 @@ import Layout from '../layouts/Layout.astro';
 				<a href="">Learn more about how Realms make it easy for anyone to find—and create!—their own corner of the web!</a>
 			</div>
 
-			<img src="/public/images/passion.webp" alt="">
+			<Image src={passion} alt="" />
 
 		</section>
 
 		<section class="two-columns">
 
-			<img src="/public/images/fellow-kids.webp" alt="">
+			<Image src={fellowKids} alt="" />
 
 			<div class="wrapper">
 				<h2>By Online Fans, For Online Fans</h2>
@@ -51,13 +55,13 @@ import Layout from '../layouts/Layout.astro';
 				<p><a href="">Read about our vision, philosophy and commitment to transparency in the second edition of our FUCQs.</a></p>
 			</div>
 
-			<img src="/public/images/not-a-jojo-reference.webp" alt="">
+			<Image src={notAJojoReference} alt="" />
 
 		</section>
 
 	</main>
 
-	
+
 </Layout>
 
 <style>
@@ -68,12 +72,17 @@ import Layout from '../layouts/Layout.astro';
 
 	section {
 		padding: 1.5em;
+		margin-bottom: 120px;
 	}
 
 	.two-columns {
 		display: flex;
-		/* align-items: center; */
+		align-items: center;
 		gap: 2em;
+	}
+
+	.two-columns img {
+		max-width: 480px;
 	}
 
 
@@ -81,7 +90,7 @@ import Layout from '../layouts/Layout.astro';
 
 	section img,
 	.wrapper {
-		width: calc(50% - 2em);	
+		width: calc(50% - 2em);
 	}
 
 }
